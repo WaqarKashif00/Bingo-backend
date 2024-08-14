@@ -1,0 +1,5 @@
+node_modules
+!.env.example
+logs
+.vscode/
+!.vscode/launch.json

@@ -1,0 +1,68 @@
+{
+  "name": "bingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "prettier-check": "./node_modules/.bin/prettier --check .",
+    "prettier-write": "./node_modules/.bin/prettier --write .",
+    "knex": "knex",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:watch": "jest --watch"
+  },
+  "engines": {
+    "node": "16.13.0"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samc621/SneakerBot.git"
+  },
+  "author": "Samuel Corso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samc621/SneakerBot/issues"
+  },
+  "homepage": "https://github.com/samc621/SneakerBot#readme",
+  "jest": {
+    "testRegex": "((\\.|/*.)(test))\\.js?$",
+    "clearMocks": true,
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "http": "^0.0.1-security",
+    "http-proxy-agent": "^5.0.0",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^1.0.7",
+    "mysql": "^2.18.1",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.6.0",
+    "proxy-chain": "^1.0.2",
+    "socket.io": "^4.5.4",
+    "user-agents": "^1.0.705",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@jest/globals": "^27.5.1",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.0.4",
+    "knex-mock-client": "^1.6.2",
+    "prettier": "^2.6.1",
+    "supertest": "^6.1.3"
+  }
+}
